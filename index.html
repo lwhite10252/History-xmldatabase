@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Find Games Fast</title>
+    <link href="styles/mainstyle.css" rel="stylesheet" />
+    <!-- Google Fonts CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Patua+One|Hind" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <script src="https://use.fontawesome.com/97f2d469d8.js"></script>
+    <script src="scripts/MLBindex.js"></script>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <div id="logoHeader">
+        <ul>
+            <li><a href="http://m.mlb.com/news/">News</a></li>
+            <li><a href="http://mlb.mlb.com/mlb/schedule/index.jsp?src=main#date=05/02/2017">Schedule</a></li>
+            <li><a href="http://mlb.mlb.com/mlb/standings/index.jsp">Standings</a></li>
+            <li><a href="http://mlb.mlb.com/mlb/fantasy/">Fantasy League</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <div id="dateInput">
+            <p>
+                <img src="images/historylogo.png" alt="History app logo" style="width:90%; height:auto;"/><br/>
+                <label style="color:#fff; text-shadow: 0px 2px 8px #212F60;">Search MLB History and Find Games Fast</label>
+                <hr />
+
+                <table style="width:100%">
+                    <tr>
+                        <th><label style="color:#fff">Day (DD)</label></th>
+                        <th><label style="color:#fff">Mon (MM)</label></th>
+                        <th><label style="color:#fff">Year (YYYY)</label></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="txtDay" type="text" value="03" onkeypress="return editTextbox(event);"
+                                   onkeyup="charLimit(this, 2);" class="textboxes" />
+                        </td>
+                        <td>
+                            <input id="txtMonth" type="text" value="04" onkeypress="return editTextbox(event);"
+                                   onkeyup="charLimit(this, 2);" class="textboxes" />
+                        </td>
+                        <td>
+                            <input id="txtYear" type="text" value="2016" onkeypress="return editTextbox(event);"
+                                   onkeyup="charLimit(this, 4);" class="textboxes" />
+                        </td>
+                        <td><button id="submitButton" type="button" onclick="getStats();" class="button" style="background: transparent; border: 0;"><i class="fa fa-2x fa-search" aria-hidden="true" style="color: #ffffff;"></i></button></td>
+                    </tr>
+                </table>
+            </p>
+
+            <div id="container">
+            </div>
+        </div>
+    </main>
+</body>
+</html>

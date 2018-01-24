@@ -1,0 +1,132 @@
+﻿@import url('mainstyle.css');
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: url('../images/stadium.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Hind', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #212F60;
+}
+
+#logoHeader {
+    background: url('../images/headerbg.png') no-repeat;
+    background-position: left bottom;
+    background-color: #ffffff;
+    display: block;
+    position: relative;
+    top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    padding: 3px 20px;
+    border-bottom: 0px;
+    border-top-right-radius: 75px;
+    border-top-left-radius: 75px;
+}
+
+ul {
+    text-align: right;
+    margin-right: 10px;
+}
+
+li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 15px;
+}
+
+main {
+    display: block;
+    position: relative;
+    top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+	padding: 20px;
+    background: rgba(104, 154, 243, 0.7);
+    border-bottom-right-radius: 75px;
+    border-bottom-left-radius: 75px;  
+}
+
+h1 {
+    display: block;
+    font-family: 'Patua One', cursive;
+    font-size: 46px;
+    margin-top: -10px;
+    color: #ffffff;
+    text-shadow: 0px 2px 8px #212F60;
+}
+
+hr {
+    border: 2px solid #ffffff;
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Patua One', cursive;
+    font-weight: 600;
+    font-variant:small-caps;
+    font-size: 20px;
+    color: #212F60;
+}
+
+a:hover {
+    color: #cd0000;
+    transition: 1s all;
+}
+
+#container {
+    margin: auto;
+    padding-right: 10px;
+}
+
+#dateInput {
+    text-align: center;
+}
+
+.textboxes {
+    width: 70px;
+    height: 25px;
+    padding: 2px 5px;
+}
+
+input { 
+    text-align: center; 
+}
+
+.button {
+    cursor: pointer;
+}
+
+.arrayDivHeader {
+    background: #ffffff;
+    width: 60%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    padding: 10px 10px 0 10px;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+}
+
+.arrayDiv {
+    background: rgba(255, 255, 255, 0.7);
+    width: 60%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    padding: 0 10px 10px 10px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
